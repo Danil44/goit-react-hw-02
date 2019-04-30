@@ -1,0 +1,8 @@
+.dashboard {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5em;
+  padding: 0 1em 5em;
+  box-shadow: 0 6px 28px 0 rgba(24, 52, 117, 0.2);
+}

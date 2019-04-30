@@ -1,0 +1,37 @@
+.container {
+  width: 100%;
+  border: 1px solid #acacac;
+  border-radius: 5px;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.headRow {
+  composes: row;
+  border-bottom: 1px solid #000;
+}
+
+.row:not(:last-child) {
+  border-bottom: 1px solid #000;
+}
+
+.titleHead {
+  width: 100%;
+  padding: 0.8em;
+}
+
+.titleHead:not(:last-child) {
+  border-right: 1px solid #000;
+}
+
+.col {
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 600;
+  composes: titleHead;
+}
