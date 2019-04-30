@@ -7,7 +7,11 @@ export default class MovieGrid extends Component {
   state = {};
 
   static propTypes = {
-    items: PropTypes.arrayOf().isRequired,
+    items: PropTypes.arrayOf(
+      PropTypes.shape({
+        id: PropTypes.number,
+      }),
+    ).isRequired,
   };
 
   render() {

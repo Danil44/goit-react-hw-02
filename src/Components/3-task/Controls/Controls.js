@@ -22,7 +22,6 @@ export default class Controls extends Component {
 
   handleChangeAmount = e => {
     const { value } = e.target;
-
     this.setState({ amount: +value });
   };
 
@@ -54,7 +53,7 @@ export default class Controls extends Component {
           className={styles.input}
           type="number"
           name="amount"
-          value={amount}
+          value={amount > 0 ? amount : ''}
           onChange={this.handleChangeAmount}
         />
         <button
